@@ -50,19 +50,23 @@
           <i aria-hidden="true" class="fas fa-bars"></i>
         </button>
       </nav>
-      <nav class="navbar">
+      <div id="contenido">
+        <nav class="navbar">
+          <button onclick="cambiarIdioma('es')">ES</button>
+          <button onclick="cambiarIdioma('en')">EN</button>
+       </nav>
 
-        <div class="lang-switch">
+       <h1 class="es">Bienvenido a mi Web</h1>
+       <h1 class="en">Welcome to my Website</h1>
 
-           <input type="checkbox" id="lang-toggle" class="lang-checkbox">
-    
-           <label for="lang-toggle" class="lang-btn btn-es">ES</label>
-           <label for="lang-toggle" class="lang-btn btn-en">EN</label>
-         </div>
-     </nav>
+       <p class="es">
+         Esta es una página multilenguaje simple usando solo estilos.
+      </p>
 
-   <p class="txt-es">Este texto esta en Español.</p>
-   <p class="txt-en">This text is in English.</p>
+      <p class="en">
+        This is a simple multilingual page using only styles.
+      </p>
+    </div>
     </header>
 
     <main>

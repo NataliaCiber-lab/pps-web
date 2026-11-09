@@ -61,3 +61,20 @@ const scrollUp = () => {
 }
 
 document.addEventListener('scroll', scrollUp)
+function cambiarIdioma(idioma) {
+
+    const contenido = document.getElementById('contenido');
+
+    if (idioma === 'en') {
+        contenido.classList.add('mostrar-en');
+    } else {
+        contenido.classList.remove('mostrar-en');
+    }
+
+    localStorage.setItem('idioma', idioma);
+}
+
+// Recuperar idioma guardado
+const idiomaGuardado = localStorage.getItem('idioma') || 'es';
+
+cambiarIdioma(idiomaGuardado);
